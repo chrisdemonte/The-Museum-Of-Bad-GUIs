@@ -40,5 +40,8 @@ public class tuiController {
     	timeline.play();
     			
     }
-
+    
+    public Pane getPane() {
+    	return Pane;    	
+    }
 }

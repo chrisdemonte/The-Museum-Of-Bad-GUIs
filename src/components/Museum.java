@@ -54,7 +54,7 @@ public class Museum extends Pane{
 		this.getChildren().add(LITTLE_GUY.imageView);
 		// Exhibits must be added to the wall manually here
 		WALL.get(2).getChildren().add(new Banner(2));
-		
+		WALL.get(1).getChildren().add(new TUI(1));
 
 	}
 
