@@ -57,6 +57,20 @@ public class Museum extends Pane{
 		
 
 	}
+	
+	public static void update() {
+		if (LITTLE_GUY.moving == 1) {
+			if (LITTLE_GUY.direction == 1) {
+				Museum.X_POS += 7; 
+			}
+			if (LITTLE_GUY.direction == 2) {
+				Museum.X_POS -= 7; 
+			}
+	        for (int i = 0; i < Museum.NUM_EXHIBITS; i++) {
+	        	Museum.CONTAINER.setLayoutX(Museum.X_POS);
+	        }
+		}
+	}
 
 	
 }
