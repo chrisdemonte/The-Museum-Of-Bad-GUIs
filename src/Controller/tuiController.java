@@ -17,7 +17,7 @@ public class tuiController{
 	
 	private final String labelText ="Hello! \n I am a TUI, or 'text user interface'. "
 			+ "\n I came before the graphical user interfaces of today. "
-			+ "\n I am from a long-gone era where users had no choice but to ecxecute commands without their fingers leaving the home row."
+			+ "\n I am from a long-gone era where users had no choice but to execute commands without their fingers leaving the home row."
 			+"\n You either remember me fondly or hate the pain I put you through. #SorryNotSorry";
 	
     @FXML
