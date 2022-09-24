@@ -1,5 +1,6 @@
 package app;
 
+import components.MuseumPane;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
@@ -10,8 +11,7 @@ public class Runner extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 		// TODO Auto-generated method stub
-		Pane root = new Pane();
-		root.setMinSize(1280, 720);
+		MuseumPane root = new MuseumPane(1280, 720);
 		Scene scene = new Scene(root);
 		
 		stage.setScene(scene);
