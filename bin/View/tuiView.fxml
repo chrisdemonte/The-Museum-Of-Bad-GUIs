@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#BeginTyping" prefHeight="417.6" prefWidth="640.0" style="-fx-background-color: #0404a9;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.tuiController">
+   <children>
+      <Rectangle fx:id="shadowRect" arcHeight="5.0" arcWidth="5.0" height="286.0" layoutX="129.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 0; -fx-arc-width: 0;" width="412.0" />
+      <Line fx:id="topLine" endX="525.6666259765625" endY="2.002716064453125E-5" layoutX="107.0" layoutY="15.0" startX="-100.0" stroke="#acabac" strokeWidth="2.0" />
+      <Rectangle fx:id="titleRect" arcHeight="5.0" arcWidth="5.0" fill="#0ea9ab" height="29.0" layoutX="13.0" stroke="#0ea9ab" strokeType="INSIDE" style="-fx-arc-height: 0; -fx-arc-width: 0;" width="612.0" />
+      <Label fx:id="titleLabel" layoutX="22.0" layoutY="5.0" text="Museum of UI Excellence">
+         <font>
+            <Font name="Courier New Bold" size="17.0" />
+         </font>
+      </Label>
+      <Line fx:id="bottomLine" endX="525.6666259765625" endY="2.002716064453125E-5" layoutX="106.0" layoutY="406.0" startX="-100.0" stroke="#acabac" strokeWidth="2.0" />
+      <Line fx:id="leftLine" endX="-134.4141845703125" endY="259.4142150878906" layoutX="140.0" layoutY="146.0" startX="-133.4141845703125" startY="-130.58580017089844" stroke="#acabac" strokeWidth="2.0" />
+      <Line fx:id="rightLine" endX="-134.4141845703125" endY="259.4142150878906" layoutX="766.0" layoutY="146.0" startX="-133.4141845703125" startY="-130.58580017089844" stroke="#acabac" strokeWidth="2.0" />
+      <Rectangle fx:id="mainRect" arcHeight="5.0" arcWidth="5.0" fill="#acabac" height="286.0" layoutX="111.0" layoutY="63.0" stroke="#acabac" strokeType="INSIDE" style="-fx-arc-height: 0; -fx-arc-width: 0;" width="412.0" />
+      <Label fx:id="Label" alignment="TOP_LEFT" layoutX="129.0" layoutY="84.0" prefHeight="247.0" prefWidth="379.0" wrapText="true">
+         <font>
+            <Font name="Courier New Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
