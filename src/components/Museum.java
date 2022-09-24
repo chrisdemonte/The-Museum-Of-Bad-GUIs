@@ -11,6 +11,7 @@ public class Museum extends Pane{
 	public static ArrayList<Pane> WALL;
 	public static ArrayList<Pane> FLOOR;
 	public static ArrayList<Exhibit> EXHIBITS;
+	public static LittleGuy LITTLE_GUY;
 	public static double X_POS = 0;
 	public static double WIDTH;
 	public static double HEIGHT;
@@ -47,6 +48,10 @@ public class Museum extends Pane{
 		}
 		this.getChildren().add(CONTAINER);
 		
+		LITTLE_GUY = new LittleGuy();
+		LITTLE_GUY.imageView.setLayoutX(WIDTH * .45);
+		LITTLE_GUY.imageView.setLayoutY(HEIGHT * .6);
+		this.getChildren().add(LITTLE_GUY.imageView);
 		// Exhibits must be added to the wall manually here
 		WALL.get(2).getChildren().add(new Banner(2));
 		

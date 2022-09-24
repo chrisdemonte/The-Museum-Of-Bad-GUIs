@@ -25,10 +25,12 @@ public class Runner extends Application {
 	           //Playing the animation 
 	       // System.out.println("keypressed");
 	           if(event.getCode() == KeyCode.LEFT) {
-	        	   Museum.X_POS += 5;   
+	        	   Museum.X_POS += 7;   
+	        	   Museum.LITTLE_GUY.direction = 1;
 	           }
 	           if(event.getCode() == KeyCode.RIGHT) {
-	        	   Museum.X_POS -= 5;
+	        	   Museum.X_POS -= 7;
+	        	   Museum.LITTLE_GUY.direction = 2;
 	           }
 	           for (int i = 0; i < Museum.NUM_EXHIBITS; i++) {
 	        	  // Museum.WALL.get(i).setLayoutX(Museum.X_POS);
@@ -37,9 +39,16 @@ public class Runner extends Application {
 	           }
 	        }           
 	     };
+		    EventHandler<KeyEvent> keyReleaseHandler = new EventHandler<KeyEvent>() { 
+		        @Override 
+		        public void handle(KeyEvent event) { 
+		           //Playing the animation 
+		        	Museum.LITTLE_GUY.direction = 0;
+		        }           
+		     };
 	     
 	    scene.setOnKeyPressed(keyPressHandler);
-		
+		scene.setOnKeyReleased(keyReleaseHandler);
 		stage.setScene(scene);
 		stage.show();
 
