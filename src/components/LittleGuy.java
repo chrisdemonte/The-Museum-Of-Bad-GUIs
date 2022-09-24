@@ -24,7 +24,7 @@ public class LittleGuy {
 		direction = 0;
 		moving = 0;
 		
-		animationSpeed = 500000l;
+		animationSpeed = 200000000l;
 		lastUpdate = System.nanoTime();
 		animationTimer = lastUpdate;
 		
@@ -50,20 +50,13 @@ public class LittleGuy {
 		imageView.setFitWidth(200.0);
 		imageView.setFitHeight(250.0);
 		
-		Timer timer = new Timer();
-		timer.schedule(new TimerTask() {
-			@Override
-			public void run(){
-			Museum.LITTLE_GUY.update();
-		}}, 0, 170);
-		
 	}
 	
 	public void update() {
 		animationTimer = System.nanoTime();
 		if (animationTimer - lastUpdate > animationSpeed) {
 			frame = (frame + 1) % numFrames;
-			lastUpdate = animationTimer;
+			lastUpdate = System.nanoTime();
 			imageView.setImage(images[direction][frame]);
 		}
 	}
