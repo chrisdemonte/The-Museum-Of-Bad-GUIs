@@ -21,7 +21,7 @@
       <Line fx:id="leftLine" endX="-134.4141845703125" endY="259.4142150878906" layoutX="140.0" layoutY="146.0" startX="-133.4141845703125" startY="-130.58580017089844" stroke="#acabac" strokeWidth="2.0" />
       <Line fx:id="rightLine" endX="-134.4141845703125" endY="259.4142150878906" layoutX="766.0" layoutY="146.0" startX="-133.4141845703125" startY="-130.58580017089844" stroke="#acabac" strokeWidth="2.0" />
       <Rectangle fx:id="mainRect" arcHeight="5.0" arcWidth="5.0" fill="#acabac" height="286.0" layoutX="111.0" layoutY="63.0" stroke="#acabac" strokeType="INSIDE" style="-fx-arc-height: 0; -fx-arc-width: 0;" width="412.0" />
-      <Label fx:id="Label" alignment="TOP_LEFT" layoutX="129.0" layoutY="84.0" prefHeight="247.0" prefWidth="379.0" wrapText="true">
+      <Label fx:id="Label" alignment="TOP_LEFT" layoutX="129.0" layoutY="84.0" prefHeight="247.0" prefWidth="379.0" text="Mouse Over Me!" wrapText="true">
          <font>
             <Font name="Courier New Bold" size="15.0" />
          </font>
