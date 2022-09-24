@@ -21,11 +21,11 @@ public abstract class Exhibit extends Pane{
 		this.index = index;
 		this.name = name;
 		this.description = description;
-		this.width = Museum.WIDTH * .33;
+		this.width = Museum.WIDTH * .5;
 		this.height = Museum.HEIGHT * .58;
 		this.setMinSize( this.width, this.height );
 		this.setMaxSize( this.width, this.height );
-		this.setLayoutX(Museum.WIDTH * .33);
+		this.setLayoutX(Museum.WIDTH * .25);
 		this.setLayoutY(Museum.HEIGHT * .075);
 		this.setStyle("-fx-background-color: white;" 
 				+ "-fx-effect: dropshadow(three-pass-box, derive(grey, -75%), 10, 0, 4, 4);"
