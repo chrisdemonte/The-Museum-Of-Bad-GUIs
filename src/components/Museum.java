@@ -3,6 +3,7 @@ package components;
 
 import java.util.ArrayList;
 
+import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
 
 public class Museum extends Pane{
@@ -16,12 +17,16 @@ public class Museum extends Pane{
 	public static double WIDTH;
 	public static double HEIGHT;
 	public static int NUM_EXHIBITS;
+	//public static FXMLLoader Loader;
 	
-	public Museum(double width, double height, int numExhibits, int startingOffset) {
+	
+	public Museum(double width, double height, int numExhibits, int startingOffset) throws Exception {
 		this.setMinSize(width, height);
 		WIDTH = width;
 		HEIGHT = height;
 		NUM_EXHIBITS = numExhibits;
+		
+		//Loader = loader;
 		
 		CONTAINER = new Pane();
 		CONTAINER.setMinSize(WIDTH * NUM_EXHIBITS, HEIGHT);
@@ -54,7 +59,8 @@ public class Museum extends Pane{
 		this.getChildren().add(LITTLE_GUY.imageView);
 		// Exhibits must be added to the wall manually here
 		WALL.get(2).getChildren().add(new Banner(2));
-		WALL.get(1).getChildren().add(new TUI(1));
+		Pane tuiPane = FXMLLoader.load(getClass().getResource("/View/tuiView.fxml"));
+		WALL.get(1).getChildren().add(tuiPane);
 
 	}
 	
