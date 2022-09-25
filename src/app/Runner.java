@@ -72,6 +72,7 @@ public class Runner extends Application {
 		gameLoop.schedule(new TimerTask() {
 			@Override
 			public void run(){
+				//System.out.println("game Loop");
 			Museum.update();
 			Museum.LITTLE_GUY.update();
 		}}, 0, 33);
