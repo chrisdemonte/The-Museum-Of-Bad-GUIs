@@ -78,6 +78,7 @@ public class Runner extends Application {
 		
 		stage.setScene(scene);
 		stage.show();
+	//	System.out.println(scene.getOnKeyPressed());
 
 	}
 	public static void main (String[] args) {
