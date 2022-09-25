@@ -8,6 +8,10 @@
 
 
 <Pane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#BeginTyping" prefHeight="417.6" prefWidth="640.0" style="-fx-background-color: #0404a9;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.tuiController">
+   <style>
+   
+   
+   </style>
    <children>
       <Rectangle fx:id="shadowRect" arcHeight="5.0" arcWidth="5.0" height="286.0" layoutX="129.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" style="-fx-arc-height: 0; -fx-arc-width: 0;" width="412.0" />
       <Line fx:id="topLine" endX="525.6666259765625" endY="2.002716064453125E-5" layoutX="107.0" layoutY="15.0" startX="-100.0" stroke="#acabac" strokeWidth="2.0" />

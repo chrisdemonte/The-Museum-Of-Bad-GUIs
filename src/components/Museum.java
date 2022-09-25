@@ -64,11 +64,11 @@ public class Museum extends Pane{
 				+ "and expressive nature. When you see this page what do you see? Angst and passion."));
 
 		Pane tuiPane = FXMLLoader.load(getClass().getResource("/View/tuiView.fxml"));
-		Pane geoPane = FXMLLoader.load(getClass().getResource("/View/geocitiesView.fxml"));
+		tuiPane.setLayoutX(Museum.WIDTH * .25);
+		tuiPane.setLayoutY(Museum.HEIGHT * .075);
 		WALL.get(3).getChildren().add(tuiPane);
 		WALL.get(3).getChildren().add(new TitleCards("Before There Was GUI...", "The advent of the GUI has has given a never-before-achieved level of accessibility to personal computing for the masses. This has been a"
 				+ "travesty. There is nothing more intuitive "));
-		
 		
 		WALL.get(4).getChildren().add(new Banner(4));
 		
@@ -81,6 +81,10 @@ public class Museum extends Pane{
 		WALL.get(7).getChildren().add(new RadialMenu(7));
 		WALL.get(7).getChildren().add(new TitleCards("Radial Menu", "A pixelated window does not stop you from having a well-rounded experience. It feels like you"
 				+ " are playing a videogame everytime you use this sleak GUI. For a fun and challenging experience, try using a radial GUI on a mobile device with one hand." ));
+		
+		Pane geoPane = FXMLLoader.load(getClass().getResource("/View/geocitiesView.fxml"));
+		geoPane.setLayoutX(Museum.WIDTH * .25);
+		geoPane.setLayoutY(Museum.HEIGHT * .075);
 		WALL.get(8).getChildren().add(geoPane);
 		WALL.get(8).getChildren().add(new TitleCards("1994", "Web 2.0 is well-regarded for its ease of use, interoperability and vast quantities of user-generated content. "
 				+ "Web 1.0 featured none of those things, yet to this day it is still celebrated by all with reverence inconceivable for Web 2.0."));
