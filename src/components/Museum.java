@@ -61,9 +61,16 @@ public class Museum extends Pane{
 		this.getChildren().add(LITTLE_GUY.imageView);
 		
 		// Exhibits must be added to the wall manually here
+		WALL.get(0).getChildren().add(new CNNisSlow(0));
+		WALL.get(0).getChildren().add(new TitleCards("We Are Not Ready Yet", "You may remember waiting 30 minutes for a single image to load in 90s. It isn't the website's fault. The internet simply isn't fast enough for this UI. Scientists "
+				+ "believe with advancements in infrasctructure and quantum computing, by 2035 CNN.com will load in under 10 seconds."));
+		WALL.get(1).getChildren().add(new LingHallOfFame(1));
+		WALL.get(1).getChildren().add(new TitleCards("Hall of Fame", "This is perhaps the best user interface and user experience that can be found today. When one visits this website they find themselves transported somewhere else. They "
+				+ "forget what they even visted the site for. That is the mark of the highest quality. Truly superlative!"));
+		
 		WALL.get(2).getChildren().add(new RedTextBlackBg(2));
-		WALL.get(2).getChildren().add(new TitleCards("Be Still My Beating Blog", "Artists have a deep and burning heart, and a dark and firey blog to match. Red text over black background represents the blogger's brooding "
-				+ "and expressive nature. When you see this page what do you see? Angst and passion."));
+		WALL.get(2).getChildren().add(new TitleCards("Be Still My Beating Blog", "Artists have a deep and burning heart, and a dark and firey blog to match. Red text over a black background represents the blogger's brooding "
+				+ "yet expressive nature. The generous use of animated gifs reminds us of a time when motion in digital art was innovative."));
 
 		tuiController tuiControl = new tuiController();
 		FXMLLoader tuiLoader = new FXMLLoader();
@@ -83,7 +90,7 @@ public class Museum extends Pane{
 		WALL.get(5).getChildren().add(new TitleCards("Advertisement Heaven", "With faster processors and internet speeds, developers can finally start u"
 				+ "tilizing webpages to their full potential. Up to 90% of the screen can be used for advertisements with out affecting user experience. Amazing!"));
 		WALL.get(6).getChildren().add(new YouMustSub(6));
-		WALL.get(6).getChildren().add(new TitleCards("Users Must Subsribe", "Many websites require you to pay for a subscription to access their content, but "
+		WALL.get(6).getChildren().add(new TitleCards("Users Must Subscribe", "Many websites require you to pay for a subscription to access their content, but "
 				+ "this brilliant work by newsday.com grants you full access to their news articles for 2.5 seconds. For a single moment, you experience the joy of having a subscription."));
 		WALL.get(7).getChildren().add(new RadialMenu(7));
 		WALL.get(7).getChildren().add(new TitleCards("Radial Menu", "A pixelated window does not stop you from having a well-rounded experience. It feels like you"
@@ -100,10 +107,18 @@ public class Museum extends Pane{
 		WALL.get(8).getChildren().add(new TitleCards("1994", "Web 2.0 is well-regarded for its ease of use, interoperability and vast quantities of user-generated content. "
 				+ "Web 1.0 featured none of those things, yet to this day it is still celebrated by all with reverence inconceivable for Web 2.0."));
 		
-		CONTAINER.getChildren().add(new Plant(WIDTH * 2.75, HEIGHT * .35));
+		CONTAINER.getChildren().add(new Plant(WIDTH * .75, HEIGHT * .35));
+		CONTAINER.getChildren().add(new Bench(WIDTH * 1.7, HEIGHT * .515));
+		CONTAINER.getChildren().add(new Garbage(WIDTH * 2.75, HEIGHT * .525));
+		CONTAINER.getChildren().add(new Plant(WIDTH * 2.82, HEIGHT * .35));
 		CONTAINER.getChildren().add(new Plant(WIDTH * 4, HEIGHT * .35));
 		CONTAINER.getChildren().add(new Plant(WIDTH * 4.75, HEIGHT * .35));
 		CONTAINER.getChildren().add(new Bench(WIDTH * 3.72, HEIGHT * .515));
+		CONTAINER.getChildren().add(new Garbage(WIDTH * 5.75, HEIGHT * .525));
+		CONTAINER.getChildren().add(new Plant(WIDTH * 5.82, HEIGHT * .35));
+		CONTAINER.getChildren().add(new Plant(WIDTH * 6.75, HEIGHT * .35));
+		CONTAINER.getChildren().add(new Bench(WIDTH * 7.69, HEIGHT * .515));
+		CONTAINER.getChildren().add(new Plant(WIDTH * 8.75, HEIGHT * .35));
 	}
 	
 	public static void update() {
@@ -117,6 +132,7 @@ public class Museum extends Pane{
 	        for (int i = 0; i < Museum.NUM_EXHIBITS; i++) {
 	        	Museum.CONTAINER.setLayoutX(Museum.X_POS);
 	        }
+	        System.out.println(Museum.X_POS );
 		}
 	}
 

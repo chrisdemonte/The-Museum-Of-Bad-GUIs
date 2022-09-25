@@ -26,15 +26,28 @@ public class Runner extends Application {
 	        public void handle(KeyEvent event) { 
 	           //Playing the animation 
 	       // System.out.println("keypressed");
-	           if(event.getCode() == KeyCode.LEFT) {
+	           if(event.getCode() == KeyCode.LEFT ) {
 	        	  // Museum.X_POS += 7;   
-	        	   Museum.LITTLE_GUY.direction = 1;
-	        	   Museum.LITTLE_GUY.moving = 1;
+	        	   if (Museum.X_POS >= -5) {
+			        	Museum.LITTLE_GUY.direction = 0;
+			        	Museum.LITTLE_GUY.moving = 0;
+	        	   }
+	        	   else {
+	        		   Museum.LITTLE_GUY.direction = 1;
+	        		   Museum.LITTLE_GUY.moving = 1;
+	        	   }
 	           }
-	           if(event.getCode() == KeyCode.RIGHT) {
+	           
+	           if(event.getCode() == KeyCode.RIGHT ) {
 	        	 //  Museum.X_POS -= 7;
-	        	   Museum.LITTLE_GUY.direction = 2;
-	        	   Museum.LITTLE_GUY.moving = 1;
+	        	   if (Museum.X_POS <= -10220) {
+			        	Museum.LITTLE_GUY.direction = 0;
+			        	Museum.LITTLE_GUY.moving = 0;
+	        	   }
+	        	   else {
+	        		   Museum.LITTLE_GUY.direction = 2;
+	        		   Museum.LITTLE_GUY.moving = 1;
+	        	   }
 	           }
 	          // for (int i = 0; i < Museum.NUM_EXHIBITS; i++) {
 	        	  // Museum.WALL.get(i).setLayoutX(Museum.X_POS);
@@ -48,7 +61,7 @@ public class Runner extends Application {
 		        public void handle(KeyEvent event) { 
 		           //Playing the animation 
 		        	Museum.LITTLE_GUY.direction = 0;
-		        	Museum.LITTLE_GUY.moving = 1;
+		        	Museum.LITTLE_GUY.moving = 0;
 		        }           
 		     };
 	     
