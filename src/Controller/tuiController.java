@@ -49,27 +49,34 @@ public class tuiController{
 
     @FXML
     private Line topLine;
+    
+    private boolean isRunning = false;
 
     @FXML
     void BeginTyping(MouseEvent event) {
-    	final IntegerProperty i = new SimpleIntegerProperty(0);
-    	Timeline timeline = new Timeline();
-    	KeyFrame keyFrame = new KeyFrame(
-    			Duration.seconds(.07),
-    			Event -> {
-    				if (i.get() > labelText.length()) {
-    					timeline.stop();
-    				} else {
-    					Label.setText(labelText.substring(0, i.get()));
-    					i.set(i.get()+1);
-    				}
-    			});
-    	timeline.getKeyFrames().add(keyFrame);
-    	timeline.setAutoReverse(true);
-    	timeline.setCycleCount(Animation.INDEFINITE);
-    	timeline.play();
-    			
+    	if (!isRunning) {
+    		update();
+    	}
+    	
     }
-   
+    
+	void update() {
+		isRunning = true;
+		final IntegerProperty i = new SimpleIntegerProperty(0);
+		Timeline timeline = new Timeline();
+		KeyFrame keyFrame = new KeyFrame(Duration.seconds(.07), Event -> {
+			if (i.get() > labelText.length()) {
+				timeline.jumpTo(Duration.ZERO);
+			} else {
+				Label.setText(labelText.substring(0, i.get()));
+				i.set(i.get() + 1);
+			}
+		});
+		timeline.getKeyFrames().add(keyFrame);
+		timeline.setAutoReverse(true);
+		timeline.setCycleCount(Animation.INDEFINITE);
+		timeline.play();
+		timeline.setOnFinished(event -> isRunning = false);
+	}
    
 }
