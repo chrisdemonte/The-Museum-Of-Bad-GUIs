@@ -3,5 +3,7 @@
 }
 
 .scroll-pane {
-   -fx-background-image:  url("C:/Users/Patricia Moore/OneDrive/Documents/GitHub/The-Museum-Of-Bad-GUIs/src/assets/geocities/_21_geocities-backgrounds_Bruce-Guenters-water-background-archive.jpg");
+   -fx-background-image:  url("https://i.ibb.co/TctKyVm/myproject.jpg");
+   -fx-background-repeat: REPEAT;
 }
+

@@ -1,8 +1,5 @@
-<<<<<<< Updated upstream
-/app/
-=======
->>>>>>> Stashed changes
-/components/
-/assets/
-/View/
 /Controller/
+/app/
+/assets/
+/components/
+/View/
