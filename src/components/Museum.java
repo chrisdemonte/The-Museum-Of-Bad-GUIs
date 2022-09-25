@@ -59,13 +59,16 @@ public class Museum extends Pane{
 		this.getChildren().add(LITTLE_GUY.imageView);
 		
 		// Exhibits must be added to the wall manually here
-		WALL.get(2).getChildren().add(new Banner(2));
+		WALL.get(3).getChildren().add(new Banner(3));
 
 		Pane tuiPane = FXMLLoader.load(getClass().getResource("/View/tuiView.fxml"));
-		WALL.get(1).getChildren().add(tuiPane);
-
-		WALL.get(3).getChildren().add(new AdvertisementHell(3));
-		WALL.get(4).getChildren().add(new YouMustSub(4));
+		WALL.get(2).getChildren().add(tuiPane);
+		
+		WALL.get(4).getChildren().add(new AdvertisementHell(4));
+		WALL.get(4).getChildren().add(new TitleCards("Advertisement Heaven", "With faster processors and internet speeds, developers can finally start utilizing webpages to their full potential. Up to 90% of the screen can be used for advertisements with out effecting user experience. Amazing!"));
+		WALL.get(5).getChildren().add(new YouMustSub(5));
+		WALL.get(5).getChildren().add(new TitleCards("Users Must Subsribe", "Many websites require you to pay for a subscription to access their content, but this brilliant work by newsday.com grants you full access to their news articles for 2.5 seconds. For a single moment, you experience the joy of having a subscription."));
+		WALL.get(6).getChildren().add(new RadialMenu(6));
 
 
 	}
