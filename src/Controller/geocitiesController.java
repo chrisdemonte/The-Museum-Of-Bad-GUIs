@@ -14,7 +14,7 @@ public class geocitiesController {
     private VBox outterVBox;
 
     @FXML
-    private ScrollPane scrollPane;
+    public ScrollPane scrollPane;
 
     
     
