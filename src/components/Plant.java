@@ -9,6 +9,8 @@ public class Plant extends ImageView{
 		this.setImage(new Image("/assets/decorations/potted_plant.png"));
 		this.setLayoutX(x);
 		this.setLayoutY(y);
+		this.setFitWidth(Museum.WIDTH * .25);
+		this.setFitHeight(Museum.HEIGHT * .5);
 		//Museum.CONTAINER.getChildren().add(this);
 	}
 }
