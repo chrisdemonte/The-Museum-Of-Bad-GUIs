@@ -51,10 +51,11 @@ public class tuiController{
     private Line topLine;
     
     private boolean isRunning = false;
+    private boolean isDone = false;
 
     @FXML
     void BeginTyping(MouseEvent event) {
-    	if (!isRunning) {
+    	if (!isRunning && !isDone) {
     		update();
     	}
     	
@@ -76,7 +77,7 @@ public class tuiController{
 		timeline.setAutoReverse(true);
 		timeline.setCycleCount(Animation.INDEFINITE);
 		timeline.play();
-		timeline.setOnFinished(event -> isRunning = false);
+		timeline.setOnFinished(event -> { isRunning = false; isDone = true;});
 	}
    
 }
