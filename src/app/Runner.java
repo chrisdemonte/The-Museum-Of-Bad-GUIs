@@ -19,7 +19,7 @@ public class Runner extends Application {
 		// TODO Auto-generated method stub
 		Museum root = new Museum(1280, 720, 9, 4);
 		Scene scene = new Scene(root, 1280, 720);
-		
+		scene.getStylesheets().add(getClass().getResource("../assets/CSS/Geocities.css").toString());
 		
 	    EventHandler<KeyEvent> keyPressHandler = new EventHandler<KeyEvent>() { 
 	        @Override 
