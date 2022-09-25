@@ -86,7 +86,7 @@ public class Museum extends Pane{
 		WALL.get(5).getChildren().add(new TitleCards("Advertisement Heaven", "With faster processors and internet speeds, developers can finally start u"
 				+ "tilizing webpages to their full potential. Up to 90% of the screen can be used for advertisements with out affecting user experience. Amazing!"));
 		WALL.get(6).getChildren().add(new YouMustSub(6));
-		WALL.get(6).getChildren().add(new TitleCards("Users Must Subsribe", "Many websites require you to pay for a subscription to access their content, but "
+		WALL.get(6).getChildren().add(new TitleCards("Users Must Subscribe", "Many websites require you to pay for a subscription to access their content, but "
 				+ "this brilliant work by newsday.com grants you full access to their news articles for 2.5 seconds. For a single moment, you experience the joy of having a subscription."));
 		WALL.get(7).getChildren().add(new RadialMenu(7));
 		WALL.get(7).getChildren().add(new TitleCards("Radial Menu", "A pixelated window does not stop you from having a well-rounded experience. It feels like you"
