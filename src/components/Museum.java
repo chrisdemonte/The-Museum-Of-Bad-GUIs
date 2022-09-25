@@ -64,6 +64,10 @@ public class Museum extends Pane{
 		WALL.get(0).getChildren().add(new CNNisSlow(0));
 		WALL.get(0).getChildren().add(new TitleCards("We Are Not Ready Yet", "You may remember waiting 30 minutes for a single image to load in 90s. It isn't the website's fault. The internet simply isn't ready. Scientists "
 				+ "believe with advancements in infrasctructure and quantum computing, by 2035 CNN.com will load in under 10 seconds."));
+		WALL.get(1).getChildren().add(new LingHallOfFame(1));
+		WALL.get(1).getChildren().add(new TitleCards("Hall of Fame", "This is perhaps the best user interface and user experience that can be found today. When one visits this website they find themselves somewhere else. They "
+				+ "forget what they even visted the site for. That is the mark of the highest quality. Truly superlative!"));
+		
 		WALL.get(2).getChildren().add(new RedTextBlackBg(2));
 		WALL.get(2).getChildren().add(new TitleCards("Be Still My Beating Blog", "Artists have a deep and burning heart, and a dark and firey blog to match. Red text over black background represents the blogger's brooding "
 				+ "and expressive nature. When you see this page what do you see? Angst and passion."));
