@@ -90,6 +90,7 @@ public class Museum extends Pane{
 				+ "\n*author of customizations"));
 		
 		WALL.get(4).getChildren().add(new Banner(4));
+		WALL.get(4).getChildren().add(new TitleCards("Welcome!", "- Use LEFT and RIGHT arrow keys to move.\n\r- Use the MOUSE to interact with exhibits."));
 		
 		WALL.get(5).getChildren().add(new AdvertisementHell(5));
 		WALL.get(5).getChildren().add(new TitleCards("Advertisement Heaven", "With faster processors and internet speeds, developers can finally start u"
@@ -115,7 +116,7 @@ public class Museum extends Pane{
 		EventDispatcher scrollPaneEventDispatcher = geoControl.scrollPane.getEventDispatcher();
 		geoControl.scrollPane.setEventDispatcher((event, tail) -> {
             if (KeyEvent.ANY.equals(event.getEventType().getSuperType())) {
-                System.out.println("DISPATCH\tScrollPane\tevent=" + event.getEventType());
+               // System.out.println("DISPATCH\tScrollPane\tevent=" + event.getEventType());
             }
             Event eventToDispatch = scrollPaneEventDispatcher.dispatchEvent(event, tail);
             if (KeyEvent.KEY_PRESSED.equals(event.getEventType())) {
@@ -133,9 +134,9 @@ public class Museum extends Pane{
 		CONTAINER.getChildren().add(new Bench(WIDTH * 1.7, HEIGHT * .515));
 		CONTAINER.getChildren().add(new Garbage(WIDTH * 2.75, HEIGHT * .525));
 		CONTAINER.getChildren().add(new Plant(WIDTH * 2.82, HEIGHT * .35));
-		CONTAINER.getChildren().add(new Plant(WIDTH * 4, HEIGHT * .35));
+		CONTAINER.getChildren().add(new Plant(WIDTH * 3.77, HEIGHT * .35));
 		CONTAINER.getChildren().add(new Plant(WIDTH * 4.75, HEIGHT * .35));
-		CONTAINER.getChildren().add(new Bench(WIDTH * 3.72, HEIGHT * .515));
+		CONTAINER.getChildren().add(new Bench(WIDTH * 3.92, HEIGHT * .515));
 		CONTAINER.getChildren().add(new Garbage(WIDTH * 5.75, HEIGHT * .525));
 		CONTAINER.getChildren().add(new Plant(WIDTH * 5.82, HEIGHT * .35));
 		CONTAINER.getChildren().add(new Plant(WIDTH * 6.75, HEIGHT * .35));
@@ -156,7 +157,7 @@ public class Museum extends Pane{
 	        for (int i = 0; i < Museum.NUM_EXHIBITS; i++) {
 	        	Museum.CONTAINER.setLayoutX(Museum.X_POS);
 	        }
-	        System.out.println(Museum.X_POS );
+	       // System.out.println(Museum.X_POS );
 		}
 	}
 
