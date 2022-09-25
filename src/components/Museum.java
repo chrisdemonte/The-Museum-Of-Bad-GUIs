@@ -3,6 +3,8 @@ package components;
 
 import java.util.ArrayList;
 
+import Controller.geocitiesController;
+import Controller.tuiController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;
 
@@ -63,7 +65,11 @@ public class Museum extends Pane{
 		WALL.get(2).getChildren().add(new TitleCards("Be Still My Beating Blog", "Artists have a deep and burning heart, and a dark and firey blog to match. Red text over black background represents the blogger's brooding "
 				+ "and expressive nature. When you see this page what do you see? Angst and passion."));
 
-		Pane tuiPane = FXMLLoader.load(getClass().getResource("/View/tuiView.fxml"));
+		tuiController tuiControl = new tuiController();
+		FXMLLoader tuiLoader = new FXMLLoader();
+		tuiLoader.setLocation(getClass().getResource("/View/tuiView.fxml"));
+		tuiLoader.setController(tuiControl);
+		Pane tuiPane = (Pane) tuiLoader.load();
 		tuiPane.setLayoutX(Museum.WIDTH * .25);
 		tuiPane.setLayoutY(Museum.HEIGHT * .075);
 		WALL.get(3).getChildren().add(tuiPane);
@@ -83,7 +89,11 @@ public class Museum extends Pane{
 		WALL.get(7).getChildren().add(new TitleCards("Radial Menu", "A pixelated window does not stop you from having a well-rounded experience. It feels like you"
 				+ " are playing a videogame everytime you use this sleak GUI. For a fun and challenging experience, try using a radial GUI on a mobile device with one hand." ));
 		
-		Pane geoPane = FXMLLoader.load(getClass().getResource("/View/geocitiesView.fxml"));
+		geocitiesController geoControl = new geocitiesController();
+ 		FXMLLoader geoLoader = new FXMLLoader();
+		geoLoader.setLocation(getClass().getResource("/View/geocitiesView.fxml"));
+		geoLoader.setController(geoControl);
+		Pane geoPane = (Pane) geoLoader.load();
 		geoPane.setLayoutX(Museum.WIDTH * .25);
 		geoPane.setLayoutY(Museum.HEIGHT * .075);
 		WALL.get(8).getChildren().add(geoPane);
