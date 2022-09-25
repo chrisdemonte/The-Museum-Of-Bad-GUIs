@@ -19,14 +19,15 @@ public class RedTextBlackBg extends Exhibit{
 		this.title.setMinSize(this.width - 10, this.height * .2 - 10);
 		this.title.setStyle("-fx-font-size: 20; -fx-font-weight: bold;-fx-background-color: black;"
 				+ "-fx-text-fill: red;");
-		label = new Label("   There are cemeteries that are lonely,\r\n"
+		label = new Label("   <\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3\r\n"
+				+ "   There are cemeteries that are lonely,\r\n"
 				+ "   the heart moving through a tunnel,\r\n"
 				+ "   in it darkness, darkness, darkness,\r\n"
 				+ "   like a shipwreck we die going into ourselves,\r\n"
 				+ "   as though we were drowning inside our hearts,\r\n"
 				+ "   as though we lived falling out of the skin into the soul.\r\n"
 				+ "   <\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3<\\3"
-				+ "	  \r\n\r\n\t\tHosted on LiveJournal (2001)");
+				+ "	  \r\n\r\n\r\n\t\tHosted on LiveJournal (2001)");
 		this.label.setMinSize(this.width - 10, this.height * .8 + 5);
 		this.label.setLayoutX(5);
 		this.label.setLayoutY( this.height * .2 - 10);

@@ -60,6 +60,8 @@ public class Museum extends Pane{
 		
 		// Exhibits must be added to the wall manually here
 		WALL.get(2).getChildren().add(new RedTextBlackBg(2));
+		WALL.get(2).getChildren().add(new TitleCards("Be Still My Beating Blog", "Artists have a deep and burning heart, and a dark and firey blog to match. Red text over black background represents the blogger's brooding "
+				+ "and expressive nature. When you see this page what do you see? Angst and passion."));
 
 		Pane tuiPane = FXMLLoader.load(getClass().getResource("/View/tuiView.fxml"));
 		Pane geoPane = FXMLLoader.load(getClass().getResource("/View/geocitiesView.fxml"));
