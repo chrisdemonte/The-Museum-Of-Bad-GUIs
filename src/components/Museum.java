@@ -65,7 +65,7 @@ public class Museum extends Pane{
 		WALL.get(0).getChildren().add(new TitleCards("We Are Not Ready Yet", "You may remember waiting 30 minutes for a single image to load in 90s. It isn't the website's fault. The internet simply isn't ready. Scientists "
 				+ "believe with advancements in infrasctructure and quantum computing, by 2035 CNN.com will load in under 10 seconds."));
 		WALL.get(1).getChildren().add(new LingHallOfFame(1));
-		WALL.get(1).getChildren().add(new TitleCards("Hall of Fame", "This is perhaps the best user interface and user experience that can be found today. When one visits this website they find themselves somewhere else. They "
+		WALL.get(1).getChildren().add(new TitleCards("Hall of Fame", "This is perhaps the best user interface and user experience that can be found today. When one visits this website they find themselves transported somewhere else. They "
 				+ "forget what they even visted the site for. That is the mark of the highest quality. Truly superlative!"));
 		
 		WALL.get(2).getChildren().add(new RedTextBlackBg(2));
@@ -108,7 +108,7 @@ public class Museum extends Pane{
 				+ "Web 1.0 featured none of those things, yet to this day it is still celebrated by all with reverence inconceivable for Web 2.0."));
 		
 		CONTAINER.getChildren().add(new Plant(WIDTH * .75, HEIGHT * .35));
-		CONTAINER.getChildren().add(new Bench(WIDTH * 1.67, HEIGHT * .515));
+		CONTAINER.getChildren().add(new Bench(WIDTH * 1.7, HEIGHT * .515));
 		CONTAINER.getChildren().add(new Garbage(WIDTH * 2.75, HEIGHT * .525));
 		CONTAINER.getChildren().add(new Plant(WIDTH * 2.82, HEIGHT * .35));
 		CONTAINER.getChildren().add(new Plant(WIDTH * 4, HEIGHT * .35));
@@ -132,6 +132,7 @@ public class Museum extends Pane{
 	        for (int i = 0; i < Museum.NUM_EXHIBITS; i++) {
 	        	Museum.CONTAINER.setLayoutX(Museum.X_POS);
 	        }
+	        System.out.println(Museum.X_POS );
 		}
 	}
 
