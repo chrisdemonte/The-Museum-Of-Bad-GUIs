@@ -17,7 +17,7 @@ public class Runner extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 		// TODO Auto-generated method stub
-		Museum root = new Museum(1280, 720, 5, 2);
+		Museum root = new Museum(1280, 720, 7, 3);
 		Scene scene = new Scene(root, 1280, 720);
 		
 		

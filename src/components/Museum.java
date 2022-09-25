@@ -59,13 +59,14 @@ public class Museum extends Pane{
 		this.getChildren().add(LITTLE_GUY.imageView);
 		
 		// Exhibits must be added to the wall manually here
-		WALL.get(2).getChildren().add(new Banner(2));
+		WALL.get(3).getChildren().add(new Banner(3));
 
 		Pane tuiPane = FXMLLoader.load(getClass().getResource("/View/tuiView.fxml"));
-		WALL.get(1).getChildren().add(tuiPane);
+		WALL.get(2).getChildren().add(tuiPane);
 
-		WALL.get(3).getChildren().add(new AdvertisementHell(3));
-		WALL.get(4).getChildren().add(new YouMustSub(4));
+		WALL.get(4).getChildren().add(new AdvertisementHell(4));
+		WALL.get(5).getChildren().add(new YouMustSub(5));
+		WALL.get(6).getChildren().add(new RadialMenu(6));
 
 
 	}
