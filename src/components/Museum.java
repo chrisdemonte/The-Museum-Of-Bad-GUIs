@@ -65,6 +65,7 @@ public class Museum extends Pane{
 		WALL.get(1).getChildren().add(tuiPane);
 
 		WALL.get(3).getChildren().add(new AdvertisementHell(3));
+		WALL.get(4).getChildren().add(new YouMustSub(4));
 
 
 	}
