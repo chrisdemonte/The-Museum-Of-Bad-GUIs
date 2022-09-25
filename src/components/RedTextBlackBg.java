@@ -30,14 +30,14 @@ public class RedTextBlackBg extends Exhibit{
 		this.label.setMinSize(this.width - 10, this.height * .8 + 5);
 		this.label.setLayoutX(5);
 		this.label.setLayoutY( this.height * .2 - 10);
-		this.label.setStyle("-fx-font-size: 16; -fx-background-color: black;"
+		this.label.setStyle("-fx-font-size: 16; -fx-background-image: url(\"/assets/goth/sparkledust.gif\");"
 				+ "-fx-text-fill: red;");
-		this.reaper = new ImageView(new Image("/assets/reaper.jpg"));
+		this.reaper = new ImageView(new Image("/assets/goth/reaper.jpg"));
 		this.reaper.setFitWidth(this.width * .3);
 		this.reaper.setFitHeight(this.height * .66);
 		this.reaper.setLayoutX(this.width * .66);
 		this.reaper.setLayoutY(this.height * .2);
-		this.cooltext = new ImageView(new Image("/assets/cooltext420046471770038.gif"));
+		this.cooltext = new ImageView(new Image("/assets/goth/cooltext420046471770038.gif"));
 		this.cooltext.setFitWidth(this.width - 10);
 		this.cooltext.setFitHeight(this.height * .2);
 		this.cooltext.setLayoutX(10);

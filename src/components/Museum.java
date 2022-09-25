@@ -59,26 +59,28 @@ public class Museum extends Pane{
 		this.getChildren().add(LITTLE_GUY.imageView);
 		
 		// Exhibits must be added to the wall manually here
-		WALL.get(3).getChildren().add(new Banner(3));
+		WALL.get(2).getChildren().add(new RedTextBlackBg(2));
 
 		Pane tuiPane = FXMLLoader.load(getClass().getResource("/View/tuiView.fxml"));
 		Pane geoPane = FXMLLoader.load(getClass().getResource("/View/geocitiesView.fxml"));
-		WALL.get(2).getChildren().add(tuiPane);
-		WALL.get(2).getChildren().add(new TitleCards("Before There Was GUI...", "The advent of the GUI has has given a never-before-achieved level of accessibility to personal computing for the masses. This has been a"
+		WALL.get(3).getChildren().add(tuiPane);
+		WALL.get(3).getChildren().add(new TitleCards("Before There Was GUI...", "The advent of the GUI has has given a never-before-achieved level of accessibility to personal computing for the masses. This has been a"
 				+ "travesty. There is nothing more intuitive "));
-		WALL.get(1).getChildren().add(new RedTextBlackBg(1));
 		
-		WALL.get(4).getChildren().add(new AdvertisementHell(4));
-		WALL.get(4).getChildren().add(new TitleCards("Advertisement Heaven", "With faster processors and internet speeds, developers can finally start u"
+		
+		WALL.get(4).getChildren().add(new Banner(4));
+		
+		WALL.get(5).getChildren().add(new AdvertisementHell(5));
+		WALL.get(5).getChildren().add(new TitleCards("Advertisement Heaven", "With faster processors and internet speeds, developers can finally start u"
 				+ "tilizing webpages to their full potential. Up to 90% of the screen can be used for advertisements with out affecting user experience. Amazing!"));
-		WALL.get(5).getChildren().add(new YouMustSub(5));
-		WALL.get(5).getChildren().add(new TitleCards("Users Must Subsribe", "Many websites require you to pay for a subscription to access their content, but "
+		WALL.get(6).getChildren().add(new YouMustSub(6));
+		WALL.get(6).getChildren().add(new TitleCards("Users Must Subsribe", "Many websites require you to pay for a subscription to access their content, but "
 				+ "this brilliant work by newsday.com grants you full access to their news articles for 2.5 seconds. For a single moment, you experience the joy of having a subscription."));
-		WALL.get(6).getChildren().add(new RadialMenu(6));
-		WALL.get(6).getChildren().add(new TitleCards("Radial Menu", "A pixelated window does not stop you from having a well-rounded experience. It feels like you"
+		WALL.get(7).getChildren().add(new RadialMenu(7));
+		WALL.get(7).getChildren().add(new TitleCards("Radial Menu", "A pixelated window does not stop you from having a well-rounded experience. It feels like you"
 				+ " are playing a videogame everytime you use this sleak GUI. For a fun and challenging experience, try using a radial GUI on a mobile device with one hand." ));
-		WALL.get(7).getChildren().add(geoPane);
-		WALL.get(7).getChildren().add(new TitleCards("1994", "Web 2.0 is well-regarded for its ease of use, interoperability and vast quantities of user-generated content. "
+		WALL.get(8).getChildren().add(geoPane);
+		WALL.get(8).getChildren().add(new TitleCards("1994", "Web 2.0 is well-regarded for its ease of use, interoperability and vast quantities of user-generated content. "
 				+ "Web 1.0 featured none of those things, yet to this day it is still celebrated by all with reverence inconceivable for Web 2.0."));
 	}
 	
