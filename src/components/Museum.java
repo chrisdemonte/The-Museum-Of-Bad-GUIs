@@ -62,7 +62,7 @@ public class Museum extends Pane{
 		WALL.get(3).getChildren().add(new Banner(3));
 
 		Pane tuiPane = FXMLLoader.load(getClass().getResource("/View/tuiView.fxml"));
-		///Pane geoPane = FXMLLoader.load(getClass().getResource("/View/geocitiesView.fxml"));
+		Pane geoPane = FXMLLoader.load(getClass().getResource("/View/geocitiesView.fxml"));
 		WALL.get(2).getChildren().add(tuiPane);
 		WALL.get(2).getChildren().add(new TitleCards("Before There Was GUI...", "The advent of the GUI has has given a never-before-achieved level of accessibility to personal computing for the masses. This has been a"
 				+ "travesty. There is nothing more intuitive "));
