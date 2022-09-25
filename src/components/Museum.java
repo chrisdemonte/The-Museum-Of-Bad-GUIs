@@ -67,8 +67,9 @@ public class Museum extends Pane{
 		tuiPane.setLayoutX(Museum.WIDTH * .25);
 		tuiPane.setLayoutY(Museum.HEIGHT * .075);
 		WALL.get(3).getChildren().add(tuiPane);
-		WALL.get(3).getChildren().add(new TitleCards("Before There Was GUI...", "The advent of the GUI has has given a never-before-achieved level of accessibility to personal computing for the masses. This has been a"
-				+ "travesty. There is nothing more intuitive "));
+		WALL.get(3).getChildren().add(new TitleCards("Before There Was GUI", "It's said that an intuitive interface is one that works as the user expects it to. For the best intuitiveness look no further than the "
+				+ "TUI! Extreme functionality custimization allows the TUI to work the way as many as one (1)* users expect it to."
+				+ "\n*author of customizations"));
 		
 		WALL.get(4).getChildren().add(new Banner(4));
 		
