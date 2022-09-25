@@ -1,16 +1,20 @@
 package components;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.KeyValue;
+import javafx.animation.Timeline;
 import javafx.event.EventHandler;
 import javafx.scene.control.Label;
 import javafx.scene.control.OverrunStyle;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.util.Duration;
 
 public class AdvertisementHell extends Exhibit{
 
 	public ImageView bottom;
-	//public ImageView left;
+	public boolean played;
 	public ImageView right;
 	public ImageView animated;
 	public Label content;
@@ -29,7 +33,7 @@ public class AdvertisementHell extends Exhibit{
 		right.setLayoutX(this.width * .7);
 		right.setLayoutY(5);
 		animated = new ImageView(new Image("/assets/advertisements/Advertisement_02.png"));
-		animated.setFitHeight(this.height * .66);
+		animated.setFitHeight(0);
 		animated.setFitWidth(this.width * .66);
 		animated.setLayoutX(15);
 		animated.setLayoutY(5);
@@ -46,6 +50,7 @@ public class AdvertisementHell extends Exhibit{
 		content.setMaxSize(this.width * .6, this.height * .8);
 		content.setLayoutX(this.width * .05);
 		content.setLayoutY(10);
+		played = false;
 		
 		this.getChildren().addAll(content, bottom, right, animated);
 		
@@ -66,7 +71,23 @@ public class AdvertisementHell extends Exhibit{
 		content.setMaxSize(this.width * .6, this.height * .15);
 		content.setLayoutX(this.width * .05);
 		content.setLayoutY(this.height * .65 + 10);
-		animated.setVisible(true);
+		if (played == false) {
+			animated.setVisible(true);
+			played = true;
+		    Timeline timeline = new Timeline();
+		        
+		    timeline.getKeyFrames().addAll(
+		                    new KeyFrame(Duration.ZERO, // set start position at 0
+		                    new KeyValue(animated.fitHeightProperty(), 0),
+		                    new KeyValue(animated.fitHeightProperty(), 0)),
+		                    new KeyFrame(new Duration(1000), // set end position at 40s
+				            new KeyValue(animated.fitHeightProperty(), this.height * .66),
+				            new KeyValue(animated.fitHeightProperty(), this.height * .66)));
+		    
+		        // play 40s of animation
+		    timeline.play();
+		}
+		
 	}
 
 }

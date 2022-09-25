@@ -65,11 +65,11 @@ public class Museum extends Pane{
 		WALL.get(2).getChildren().add(tuiPane);
 		
 		WALL.get(4).getChildren().add(new AdvertisementHell(4));
-		WALL.get(4).getChildren().add(new TitleCards("Advertisement Heaven", "With faster processors and internet speeds, developers can finally start utilizing webpages to their full potential. Up to 90% of the screen can be used for advertisements with out effecting user experience. Amazing!"));
+		WALL.get(4).getChildren().add(new TitleCards("Advertisement Heaven", "With faster processors and internet speeds, developers can finally start utilizing webpages to their full potential. Up to 90% of the screen can be used for advertisements with out affecting user experience. Amazing!"));
 		WALL.get(5).getChildren().add(new YouMustSub(5));
 		WALL.get(5).getChildren().add(new TitleCards("Users Must Subsribe", "Many websites require you to pay for a subscription to access their content, but this brilliant work by newsday.com grants you full access to their news articles for 2.5 seconds. For a single moment, you experience the joy of having a subscription."));
 		WALL.get(6).getChildren().add(new RadialMenu(6));
-
+		WALL.get(6).getChildren().add(new TitleCards("Radial Menu", "A pixelated window does not stop you from having a well-rounded experience. It feels like you are playing a videogame everytime you use this sleak GUI. For a fun and challenging experience, try using a radial GUI on a mobile device with one hand." ));
 
 	}
 	
