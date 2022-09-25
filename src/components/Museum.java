@@ -89,7 +89,9 @@ public class Museum extends Pane{
 		WALL.get(8).getChildren().add(geoPane);
 		WALL.get(8).getChildren().add(new TitleCards("1994", "Web 2.0 is well-regarded for its ease of use, interoperability and vast quantities of user-generated content. "
 				+ "Web 1.0 featured none of those things, yet to this day it is still celebrated by all with reverence inconceivable for Web 2.0."));
+		
 		CONTAINER.getChildren().add(new Plant(WIDTH * 4, HEIGHT * .35));
+		CONTAINER.getChildren().add(new Plant(WIDTH * 4.75, HEIGHT * .35));
 	}
 	
 	public static void update() {
