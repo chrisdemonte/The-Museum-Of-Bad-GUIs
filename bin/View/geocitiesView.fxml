@@ -12,7 +12,4 @@
          </content>
       </ScrollPane>
    </children>
-   <stylesheets>
-    <URL value="@../assets/CSS/Geocities.css" />
-</stylesheets>
 </Pane>

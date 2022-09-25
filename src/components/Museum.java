@@ -64,8 +64,9 @@ public class Museum extends Pane{
 		Pane tuiPane = FXMLLoader.load(getClass().getResource("/View/tuiView.fxml"));
 		Pane geoPane = FXMLLoader.load(getClass().getResource("/View/geocitiesView.fxml"));
 		WALL.get(2).getChildren().add(tuiPane);
-		WALL.get(2).getChildren().add(new TitleCards("Before There Was GUI...", "The advent of the GUI has has given a never-before-achieved level of accessibility to personal computing for the masses. This has been a"
-				+ "travesty. There is nothing more intuitive "));
+		WALL.get(2).getChildren().add(new TitleCards("Before There Was GUI...", "The advent of the GUI gave personal computing a never-before-achieved level of accessibility for the masses- a "
+				+ "travesty. They will never be ast intuitive as the text-based interfaces they replaced, which worked the way the end-user expected it to due to maximal function customization. Unfortunately this did"
+				+ "make them unintuitive to anyone who wasn't the single end-user."));
 		WALL.get(4).getChildren().add(new AdvertisementHell(4));
 		WALL.get(4).getChildren().add(new TitleCards("Advertisement Heaven", "With faster processors and internet speeds, developers can finally start u"
 				+ "tilizing webpages to their full potential. Up to 90% of the screen can be used for advertisements with out affecting user experience. Amazing!"));
