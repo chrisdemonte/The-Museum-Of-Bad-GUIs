@@ -73,16 +73,16 @@
                               <Insets top="4.0" />
                            </HBox.margin>
                         </Label>
-                        <Hyperlink prefHeight="31.0" prefWidth="73.0" style="-fx-underline: true; -fx-text-fill: blue;" text="Exhibits">
+                        <Hyperlink prefHeight="31.0" prefWidth="73.0" style="-fx-underline: true; -fx-text-fill: red;" text="Exhibits">
                            <font>
                               <Font name="Comic Sans MS" size="16.0" />
                            </font>
                         </Hyperlink>
                      </children>
                   </HBox>
-                  <HBox alignment="CENTER" prefHeight="138.0" prefWidth="623.0">
+                  <HBox alignment="CENTER" prefHeight="425.0" prefWidth="623.0">
                      <children>
-                        <VBox alignment="TOP_CENTER" prefHeight="138.0" prefWidth="340.0" style="-fx-border-width: 4; -fx-border-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;">
+                        <VBox alignment="TOP_CENTER" prefHeight="194.0" prefWidth="340.0" style="-fx-border-width: 4; -fx-border-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;">
                            <children>
                               <Label alignment="CENTER" text="About Us" textFill="WHITE">
                                  <font>
@@ -92,12 +92,120 @@
                                     <Insets top="10.0" />
                                  </VBox.margin>
                               </Label>
-                              <Label alignment="TOP_LEFT" prefHeight="92.0" prefWidth="293.0" text="Curated by Christopher Demonte and Patricia Moore, the Museum of UI Excellence is devoted to the pursuit of preserving the best user interface expereinces that man has ever had the misfortune of being subjected to. " textFill="WHITE" wrapText="true" />
+                              <Label alignment="TOP_LEFT" prefHeight="93.0" prefWidth="293.0" text="Curated by Christopher Demonte and Patricia Moore, the Museum of UI Excellence is devoted to the pursuit of preserving the best user interface expereinces that man has ever had the misfortune of being subjected to. " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Courier New" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" prefHeight="130.0" prefWidth="293.0" text="We are passionate about noodles, scented candles, cologne, and other smelly things. We personally believe that MSG is not bad for you at all if you are looking to add more umami to your dish. Sometimes we do things with computers, but mostly we talk about who would win in battles between weird combinations of people/places/things." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Curlz MT" size="12.0" />
+                                 </font>
+                              </Label>
+                              <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="332.0">
+                                 <children>
+                                    <Label text="Pat looks like this:" textFill="WHITE">
+                                       <font>
+                                          <Font name="Jokerman" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="72.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="85.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../assets/geocities/White-Silkie-2190-L.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="267.0" prefHeight="57.0" prefWidth="332.0">
+                                 <children>
+                                    <Label alignment="TOP_CENTER" text="And Chris looks like this:" textFill="WHITE">
+                                       <font>
+                                          <Font name="Jokerman" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ImageView fitHeight="63.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="35.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../assets/geocities/istockphoto-143921954-612x612.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
                            </children>
                         </VBox>
                      </children>
                   </HBox>
-               </children></VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="514.0" prefWidth="623.0">
+                     <children>
+                        <Label text="Please enjoy a selection of our favorite memes." textFill="WHITE">
+                           <padding>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </padding>
+                           <font>
+                              <Font name="Courier New Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="219.0" prefWidth="623.0">
+                           <children>
+                              <ImageView fitHeight="220.0" fitWidth="171.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/geocities/65D19A2E-AB75-4042-B44B-D4112E65922D.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="220.0" fitWidth="223.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/geocities/92F0FA57-6174-4BCD-B9FC-FDDE2E7F2072.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="218.0" fitWidth="226.0" layoutX="194.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/geocities/99AC87A5-909D-43EA-BC55-41C753407C3B.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="85.0" prefHeight="209.0" prefWidth="623.0">
+                           <children>
+                              <ImageView fitHeight="212.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/geocities/956D4694-D649-4D30-8A18-C690CEDA9C6E.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="212.0" fitWidth="250.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/geocities/A9449C7C-BA63-4CBE-9F0C-F9210A7E7F22.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="210.0" fitWidth="200.0" layoutX="194.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/geocities/Image-1.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Label prefHeight="35.0" prefWidth="177.0" text="© 1996 Museum of UI Excellence" textFill="#ddd8ac">
+                     <font>
+                        <Font name="Papyrus" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
          </content>
       </ScrollPane>
       <ImageView fitHeight="50.0" fitWidth="640.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" y="382.0">

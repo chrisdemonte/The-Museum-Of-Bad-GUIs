@@ -85,9 +85,9 @@ public class Museum extends Pane{
 		tuiPane.setLayoutX(Museum.WIDTH * .25);
 		tuiPane.setLayoutY(Museum.HEIGHT * .075);
 		WALL.get(3).getChildren().add(tuiPane);
-		WALL.get(3).getChildren().add(new TitleCards("Before There Was GUI", "It's said that an intuitive interface is one that works as the user expects it to. For the best intuitiveness look no further than the "
+		WALL.get(3).getChildren().add(new TitleCards("Before There Was GUI", "An intuitive interface is one that works as the user expects. For best intuitiveness look no further than the "
 				+ "TUI! Extreme functionality custimization allows the TUI to work the way as many as one (1)* users expect it to."
-				+ "\n*author of customizations"));
+				+ "\n*AKA the author of the customuzitions"));
 		
 		WALL.get(4).getChildren().add(new Banner(4));
 		WALL.get(4).getChildren().add(new TitleCards("Welcome!", "- Use LEFT and RIGHT arrow keys to move.\n\r- Use the MOUSE to interact with exhibits."));
@@ -110,8 +110,8 @@ public class Museum extends Pane{
 		geoPane.setLayoutX(Museum.WIDTH * .25);
 		geoPane.setLayoutY(Museum.HEIGHT * .075);
 		WALL.get(8).getChildren().add(geoPane);
-		WALL.get(8).getChildren().add(new TitleCards("1994", "Web 2.0 is well-regarded for its ease of use, interoperability and vast quantities of user-generated content. "
-				+ "Web 1.0 featured none of those things, yet to this day it is still celebrated by all with reverence inconceivable for Web 2.0."));
+		WALL.get(8).getChildren().add(new TitleCards("1994", "Web 2.0 is well-regarded for its ease of use, interoperability and vast quantity of user-generated content. "
+				+ "Web 1.0 doesn't require any of that to be celebrated with reverence inachievable for Web 2.0. Long live read-only Web 1.0."));
 		geoControl.scrollPane.requestFocus();
 		EventDispatcher scrollPaneEventDispatcher = geoControl.scrollPane.getEventDispatcher();
 		geoControl.scrollPane.setEventDispatcher((event, tail) -> {
